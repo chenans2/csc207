@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csc207.project.flights.SearchFlightsActivity"
+    tools:showIn="@layout/activity_search_flights">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Departure date:"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etFlightDepDate"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="YYYY-MM-DD"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Travel origin:"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etFlightOrigin"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="City"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Destination:"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etFlightDest"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="City"/>
+
+
+    <TextView
+        android:id="@+id/tvFlightsError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No matching flights found"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/bSearchFlights"
+        android:text="Search flights"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bToMenu"
+        android:text="Back"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

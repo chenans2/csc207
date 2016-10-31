@@ -1,0 +1,76 @@
+November 23rd, 2015: ~5-7pm
+Met in person at Bahen to discuss pIII and plan ahead.
+
+Current state of the project:
+A majority of the back-end is complete as required in pII.
+Missings featuers include: Admins, booking Itineraries, tracking number of available seats for each Flight.
+All group members have set up Android Studio, though some have issues running the emulator.
+Discussed the design of the Activities and their layout. Did research on XML.
+Started the design for CRC Cards.
+
+Task assignments:
+All group members are to familiarize themselves with Android Studio and how to design an Android Project.
+Topics to research include Views, Activities, Intents, XML.
+
+----------------------------------------------------------------------------
+
+November 25th, 2015 ~3-5pm
+Met in person at Bahen to discuss progress on pIII. Have learned the basics of Android Studio.
+
+The current state of the project:
+Same as previous meeting.
+
+Task assignments:
+Anson: Design a Login Activity on XML and its corresponding class to take in user input and check if valid.
+Freddy: Design a Main Menu Activity on XML and its corresponding class
+Keyhan: Create an Admin class that is able to set Client info and Flight info.
+Matt: Implement methods for Clients to book Itineraries and keep track of the number of seats available.
+
+----------------------------------------------------------------------------
+
+November 30th, 2015 ~4-6pm
+
+Current state of the project:
+The Login Activity is complete (tested with hard-coded email and password), but is unable to read from a file such as passwords.txt.
+The Admin class is complete and contains the required methods.
+Results from pII show that our program only passed 11/13 of the tests. 2 tests failed due to Null Pointer Exception.
+
+Anson: Design a Client Activity on XML and its corresponding class to display Client information and display it on the screen.
+Freddy: Find out how to push files to our Android device and read from them.
+Keyhan: Conduct tests on our generating/searching Itineraries method to find where we are getting a Null Pointer Exception.
+Matt: Conduct tests on our generating/searching Itineraries method to find where we are getting a Null Pointer Exception.
+
+----------------------------------------------------------------------------
+
+Online meetings over the weekend to discuss progress.
+
+Pushing files to device has been figured out and implemented into Login Activity and Client Activity. Login now reads from passwords.txt to generate a credentials HashMap which is used to verify the entered email and password. Client Activity now reads from clients.txt on the first run and populates the ClientManager class which stores the info. Pressing the update button on the Client Activity now takes all the info from the EditText boxes and updates the variables of the corresponding Client. Also created a README.txt to explain where to push files for the device.
+
+--------------------------------------
+December 3rd, 2015 ~5-6pm
+Met in person at  Bahen for the interview with our TA, had group meeting afterwards.
+
+The current state of the project:
+A working Login Activity that reads from passwords.txt to determine the valid credentials. A basic Main Menu with the option to View/Edit Client Info, Search Flights, Search Itineraries, Logout. The ability to view the information of the logged in Client, edit, and save any changes. A basic search screen for Flights and Itineraries, but does not currently work. Looking into flights we found that some of the methods used to calculate time were not available in our current api (project requires api 8). We have still not discovered the reason why we are getting a Null Pointer Exception, all test cases appear to be passing.
+
+Task assignments:
+Anson: Design a way to identify if an Admin logs in instead of a Client and display the proper Activity afterwards. Allow Admins to view/edit all Flights and Clients.
+Freddy: Create another way to calculate time of Flights. Design the list of Flights and Itineraries in XML. Pull information entered into the search fields and pass that into our search Flights/Itineraries method.
+Keyhan: Design an Activity for Admins (Admins have more options available to them such as viewing all Client info and editing Flights)
+Matt: Conduct tests on our generating/searching Itineraries method to find where we are getting a Null Pointer Exception.
+
+-----------------------------------------------------------
+December 7, 2015 ~4:00~11:30pm
+In person meeting in a computer lab at Bahen
+
+Current state of the project:
+The app is up and running, most Activities are functional, with the exception of UploadFlights/Clients, DisplayClientsActivity, DisplayItinsActivity and DisplayFlightsActivity. We are working to get the 'cards' to be clickable (in the searching activities) and take us to these display Activities without crashing. Currently, we can log in, get taken to the MenuActivity, Administrators will be shown more options (a field to enter a Client's email and edit that Client), a Client can edit their info, Flights can be searched (not displayed!) and so can Itineraries. We are still unsure about the NullPointerException, but we have idetified its origin and have surrounded it with a try/catch.
+
+Task assignments:
+Anson: Get the UploadFlightsActivity and UploadClientsActivity to save the given file's information to the app, appending it to pre-existing information, fix a problem with editing Flight info where Flights are not changed.
+Freddy: Get the Client and Flights display to show as cards with additional options availible to Administrators, such as editing Flights and booking Itineraries. Get the DisplayItineraryActivity to show the previously searched Itineraries.
+Keyhan: Complete the updated CRC cards, including all Activity classes. Replace the toMinutes method, have a constructor for Itinerary given a String. Check for valid numSeats when booking Itinerary.
+Matthew: Determine why the app crashes when attempting to display searched Itineraries (which is probably the same cause in displaying Flights). Also get the back button to display updated Flight information after editing a Flight. Make sure Flights with the same number aren't uploaded.
+
+December 8th, 4pm Bahen 3200
+Matt and Freddy met to fix sorting by cost, booking itineraries from admin.  Feature list is now implemented.  Remaining tasks are: bug testing.

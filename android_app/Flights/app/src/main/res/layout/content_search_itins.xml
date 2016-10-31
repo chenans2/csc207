@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csc207.project.flights.SearchItinsActivity"
+    tools:showIn="@layout/activity_search_itins">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Departure date:"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etItinDepDate"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="YYYY-MM-DD"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Travel origin:"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etItinOrigin"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="City"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Destination:"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etItinDest"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="City"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Sort by:"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radioTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvItinsError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No matching itineraries found"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/bSearchItins"
+        android:text="Search itineraries"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bToMenu"
+        android:text="Back"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

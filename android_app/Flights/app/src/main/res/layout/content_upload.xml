@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.csc207.project.flights.UploadActivity"
+    tools:showIn="@layout/activity_upload">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Upload Client File"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etClientFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="File"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tvUploadClientsMessage"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bUploadClientFile"
+        android:text="Upload File"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Upload Flight File"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"/>
+
+    <EditText
+        android:id="@+id/etFlightFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="File"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/tvUploadFlightsMessage"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bUploadFlightFile"
+        android:text="Upload File"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Note: If the same client (email) or flight (flight no.) occurs again in a subsequent upload, their new data will replace the old data."
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:text="Back"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csc207.project.flights" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClientActivity"
+            android:label="@string/title_activity_client"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchFlightsActivity"
+            android:label="@string/title_activity_search_flights"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchItinsActivity"
+            android:label="@string/title_activity_search_itins"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayFlightsActivity"
+            android:label="@string/title_activity_display_flights"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayItinerariesActivity"
+            android:label="@string/title_activity_display_itins"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FlightActivity"
+            android:label="@string/title_activity_flight"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadActivity"
+            android:label="@string/title_activity_upload"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookItineraryActivity"
+            android:label="@string/title_activity_book_itinerary"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayBookedItineraries"
+            android:label="@string/title_activity_display_booked_itineraries"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>
